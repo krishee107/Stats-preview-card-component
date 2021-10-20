@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+html, 
+body {
+    height: 100%;
+}
+body{
+    background:hsl(233, 47%, 7%);
+    Font-size: 15px;
+    display: grid;
+    justify-content: center;
+}
+#cajaPadre{
+    background-color: hsl(244, 38%, 16%);
+}
+#insights{
+    color: hsl(277, 64%, 61%);
+}
+
+div#cajaPadre {
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    width: 900px;
+}#cajaDer img {
+    height: 100%;
+    width: 100%;
+}
+
+div#cajaIzq {
+    display: grid;
+    color: white;
+    padding: 10%;
+    text-align: left;
+}
+
+div#titulo {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+div#texto {font-size: 15px;color: hsla(0, 0%, 100%, 0.6);}
+
+h {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+div#companiesNumber, #templatesNumber, #queriesNumber {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+div#companiesText, #queriesText, #templatesText {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.elementoStat {
+    display: grid;
+    row-gap: 5px;
+}
+
+
+div#imagen {
+    width: 100%;
+    height: 100%;
+}div#filtro {
+    background: rgb(102 15 157 / 55%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+div#queries {
+    /* justify-self: right; */
+}
+
+div#templates {
+    justify-self: center;
+}
+
+div#companies {
+    justify-self: left;
+}
+div#cajaDer {
+    position: relative;
+}
+
+/* Movil */
+
+@media (max-width: 850px) {
+    div#cajaPadre {
+        display: grid;
+        width: 95%;
+        grid-template-areas:
+            "I I"
+            "T T";
+        align-content: unset;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    
+    div#cajaIzq {grid-area: T;gap: 5%;box-sizing: border-box;height: 100%;padding-bottom: 15%;}
+    
+    div#cajaDer {
+        grid-area: I;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    div#stats {
+        grid-template-columns: unset !important;
+        justify-content: center;
+        gap: 8%;
+        text-align: center;
+        align-content: center;
+        padding: 15px;
+    }
+    
+    div#texto, #titulo {
+        text-align: center;
+    }body {
+    padding: 15% 0;
+}
+}
+
+
+
+div#stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
